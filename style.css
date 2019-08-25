@@ -1,0 +1,118 @@
+.conteiner {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  height: 98vh;
+  width: 98vw;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+  .overflow {
+  text-align: center;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+  overflow: hidden;
+}
+
+.slide_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide {
+  box-sizing: border-box;
+}
+
+.controls {
+  width: 100px;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  align-items: center;
+}
+
+.next {
+  position: absolute;
+  top: calc(100vh - 100px);
+  color: white;
+}
+
+.previous {
+  position: absolute;
+  top: 25px;
+  color: white;
+}
+
+.poligon {
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  top: 0;
+  right: -350px;
+  background-color: white;
+  clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 3;
+  opacity: 0.5;
+  transition: 1s;
+  font-weight: bold;
+}
+
+.conteiner:hover .poligon {
+    right: 0;
+}
+
+.viev {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  z-index: 3;
+}
+
+.view-img {
+  vertical-align: middle;
+}
+
+.text {
+  position: absolute;
+  text-anchor: middle;
+  top: 10%;
+  right: 35px;
+ }
+
+.top {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+}
+
+.slide-num {
+  position: absolute;
+  top: 60%;
+  right: 40%;
+  font-size: 50px;
+}
+
+
